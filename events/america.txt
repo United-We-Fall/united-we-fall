@@ -1,0 +1,35 @@
+﻿add_namespace = america
+
+country_event = {
+	id = america.1
+	title = america.1.t
+	desc = america.1.d
+
+	is_triggered_only = yes
+
+	option  = {
+		name = america.1.a
+		add_ideas = {
+			USA_oredson_assassinated
+		}
+		create_country_leader = {
+			name = "Walt Disney"
+			desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+			#picture = "Portrait_USA_Walt_Disney.dds"
+			expire = "2006.1.1"
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+	}
+
+	option = {
+		name = america.1.b
+		add_ideas = {
+			USA_oredson_assassinated
+			USA_military_rule
+		}
+		USA = { country_event = { days = 1 id = america.2 } }
+	} 
+}

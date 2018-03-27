@@ -1,0 +1,18 @@
+﻿add_namespace = russia
+
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.1.a
+		add_party_popularity = {
+			stratocratic = 40
+			set_ruling_party = stratocratic
+		}
+		set_cosmetic_tag = RUS_KERENSKY_DIED
+	}
+}

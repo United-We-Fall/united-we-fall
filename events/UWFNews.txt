@@ -1,0 +1,56 @@
+﻿add_namespace = uwfnews
+
+# 1958 CP Summit
+news_event = {
+	id = uwfnews.1
+	title = uwfnews.1.t
+	desc = uwfnews.1.d
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uwfnews.1.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = USA
+				TAG = POL
+				TAG = UKR
+				TAG = PER
+				TAG = ITA
+				TAG = AUS
+			}
+		}
+	}
+	option = {
+		name = uwfnews.1.b
+		trigger = { 
+			TAG = GER
+			TAG = USA
+			TAG = POL
+			TAG = UKR
+			TAG = PER
+			TAG = ITA
+			TAG = AUS 
+		}
+	}
+}
+
+#Kerensky Died :'(
+news_event = {
+	id = uwfnews.2
+	title = uwfnews.2.t
+	desc = uwfnews.2.d
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uwfnews.2.a
+	}
+}
