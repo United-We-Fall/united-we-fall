@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		USA_german_influence = {
+			allowed = { always = yes }
+
+			#picture = generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		USA_economic_upturn = {
+			allowed = { always = yes }
+
+			#picture = generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.45
+				production_speed_infrastructure_factor = 0.3
+				consumer_goods_factor = -0.5
+			}
+		}
+		USA_home_of_the_brave = {
+			allowed = { always = yes }
+
+			#picture = generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				democratic_drift = 0.5
+			}
+		}
+
+		USA_oredson_assassinated = {
+			allowed = { always = no }
+
+			#picture = generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.01
+				conscription = -0.05
+			}
+		}
+
+		USA_military_rule = {
+			allowed = { always = no }
+
+			#picture = generic_army_war_college
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.01
+				conscription = 0.05
+				stratocratic_drift = 0.005
+			}
+		}
+	}
+}
